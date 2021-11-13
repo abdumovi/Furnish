@@ -26,3 +26,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+button {cursor: pointer;}
+
+::-webkit-scrollbar{background:0 0;border:0 none $color-light-green-3b6c58;border-radius:50px;width:5px;height:7px}
+::-webkit-scrollbar-thumb{background: $color-light-green-3b6c58; border:0 none #fff;border-radius:0}
