@@ -6,4 +6,10 @@
 @import "flexbox-grid";
 @import "components/components";
 @import "blocks/blocks";
-@import "media-queries/media-queries";
+@import "index/main";
+@import "account-page/account";
+@import "admin-panel/admin";
+@import "idea-page/idea";
+@import "service-page/service";
+@import "equipment-page/equipment";
+@import "media-queries/media-queries"; 
