@@ -1168,7 +1168,6 @@ ol {
       -ms-flex-align: center;
           align-items: center;
   background-repeat: no-repeat;
-  background-size: 20px, 20px;
   background-position: center;
 }
 
@@ -1178,6 +1177,7 @@ ol {
 }
 
 .options__btn-user {
+  background-size: 25px, 25px;
   background-image: url("../../media/img/header-icon/user-sign-up.svg");
 }
 

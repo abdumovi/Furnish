@@ -6,17 +6,13 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink" 
 	width="600" 
 	height="600"
-	fill="white">
+	stroke="black"
+	stroke-width="30"
+	fill="none">
 
   <title>Abstract user icon</title>
-
-  <defs>
-    <clipPath id="circular-border">
-      <circle cx="300" cy="300" r="250" />
-    </clipPath>
-  </defs>
-  
-  <circle cx="300" cy="300" r="280" fill="black" />
-  <circle cx="300" cy="230" r="100" />
-  <circle cx="300" cy="550" r="190" clip-path="url(#circular-border)" />
+	
+  <circle cx="300" cy="300" r="265" />
+  <circle cx="300" cy="230" r="115" />	
+  <path d="M106.81863443903,481.4 a205,205 1 0,1 386.36273112194,0" stroke-linecap="butt" />
 </svg>
