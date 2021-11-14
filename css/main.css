@@ -1176,11 +1176,6 @@ ol {
           box-shadow: 0 1px 3px #b3a36f;
 }
 
-.options__btn-user {
-  background-size: 25px, 25px;
-  background-image: url("../../media/img/header-icon/user-sign-up.svg");
-}
-
 .options__btn-heart {
   background-image: url("../../media/img/header-icon/heart__icon.svg");
   background-size: 25px, 25px;
