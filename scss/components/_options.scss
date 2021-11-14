@@ -51,6 +51,11 @@
             background-image: url('../../media/img/header-icon/heart__icon.svg');
             background-size: 25px, 25px;
         }
+
+        &-user-reg {
+            background-size: 35px, 35px;
+            background-image: url('../../media/img/header-icon/user-sign-in.svg');
+        }
     }
 
     &__icon {

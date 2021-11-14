@@ -1186,6 +1186,11 @@ ol {
   background-size: 25px, 25px;
 }
 
+.options__btn-user-reg {
+  background-size: 35px, 35px;
+  background-image: url("../../media/img/header-icon/user-sign-in.svg");
+}
+
 .options__icon {
   padding-right: 8px;
   font-size: 24px;
@@ -1221,8 +1226,10 @@ ol {
 }
 
 .search-bar__icon {
+  font-size: 14px;
+  font-weight: 400 !important;
   position: absolute;
-  top: 10px;
+  top: 13px;
   left: 15px;
 }
 
