@@ -1,0 +1,7 @@
+.logo {
+    @include width-height(115px, 60px);
+
+    &__img {
+        width: 100%;
+    }
+}

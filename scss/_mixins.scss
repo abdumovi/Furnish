@@ -94,3 +94,18 @@
   border: 0;
   background-color: transparent;
 }
+
+@mixin resetA {
+  text-decoration: none;
+  display: inline-block;
+}
+
+@mixin visibility-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@mixin visibility-hidden {
+  opacity: 0;
+  visibility: hidden;
+}

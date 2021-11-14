@@ -1,0 +1,6 @@
+.header__top {
+    &-inner {
+        @include flex-row;
+        justify-content: space-between;
+    }
+}
