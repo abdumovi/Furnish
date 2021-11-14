@@ -9,6 +9,11 @@ searchBarInput.addEventListener('click', function(){
 });
 
 
+let searchBarInputMobile = document.querySelector('#search-text-mobile');
+let autoCompleteListMobile = document.querySelector('#auto-complete-mobile');
 
+searchBarInputMobile.addEventListener('click', function(){
+    autoCompleteListMobile.classList.toggle('auto-complete--active');
+});
 
 // Search bar on click active auto complete//
