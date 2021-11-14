@@ -1172,6 +1172,11 @@ ol {
   background-position: center;
 }
 
+.options__btn:hover {
+  -webkit-box-shadow: 0 1px 3px #b3a36f;
+          box-shadow: 0 1px 3px #b3a36f;
+}
+
 .options__btn-user {
   background-image: url("../../media/img/header-icon/user-sign-up.svg");
 }
@@ -1188,7 +1193,7 @@ ol {
 }
 
 .search-bar {
-  height: 35px;
+  height: 38px;
   position: relative;
 }
 
@@ -1223,7 +1228,7 @@ ol {
 
 .auto-complete {
   position: absolute;
-  top: 35px;
+  top: 45px;
   left: 0;
   z-index: 100;
   background-color: #fff;
