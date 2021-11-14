@@ -20,6 +20,12 @@
         @include padding(13px 20px);
         @include elementBorderValues(1px solid $color-b3a36f);
         @include borderRadius(3px);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: $color-333;
+        }
 
     }
 

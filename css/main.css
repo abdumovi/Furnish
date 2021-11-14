@@ -1140,6 +1140,13 @@ ol {
   padding: 13px 20px;
   border: 1px solid #b3a36f;
   border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.options__link:hover {
+  background-color: transparent;
+  color: #333;
 }
 
 .options__btn {
