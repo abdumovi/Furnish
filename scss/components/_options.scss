@@ -7,23 +7,40 @@
         @include flex-row;
     }
 
-    &__btn,
-    &__link {
-        @include ButtonReset;
-        @include FontsGeneralVariables(16px, 600, 1.1);
-        color: $color-333;
-        text-transform: capitalize;
-        
-        &:hover {
-            color: $color-black-000;
-            text-decoration: underline;
-        }
-    }
 
+    
     &__link {
+        @include FontsGeneralVariables(16px, 600, 1.1);
+        color: $color-white-fff;
+        text-transform: capitalize;
         @include resetA;
         @include flex-row;
-        
+        background-color: $color-b3a36f;
+        box-shadow: 0 1px 3px #cbcbcb;
+        @include padding(13px 20px);
+        @include elementBorderValues(1px solid $color-b3a36f);
+        @include borderRadius(3px);
+
+    }
+
+    &__btn {
+        @include ButtonReset;
+        @include width-height(50px, 50px);
+        @include borderRadius(50%);
+        box-shadow: 0 1px 3px #cbcbcb;
+        @include flex;
+        background-repeat: no-repeat;
+        background-size: 20px, 20px;
+        background-position: center;
+
+        &-user {
+            background-image: url('../../media/img/header-icon/user-sign-up.svg');
+        }
+
+        &-heart {
+            background-image: url('../../media/img/header-icon/heart__icon.svg');
+            background-size: 25px, 25px;
+        }
     }
 
     &__icon {
