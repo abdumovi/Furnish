@@ -60,21 +60,29 @@
     }
 
     &__inner-list {
+        @include borderRadius(4px);
+        @include elementBorderValues(1px solid $color-b3a36f);
         position: absolute;
         left: 50%;
         top: 65px;
         z-index: 10;
-        transform: translateX(-50%);
+        transform: translateX(-50%) translateY(-5px);
         background-color: $color-f4f2ee;
-        @include borderRadius(4px);
-        @include elementBorderValues(1px solid $color-b3a36f);
         min-width: 180px;
+        @include visibility-hidden;
+        transition: all 0.3s ease;
+
+        &--active {
+            @include visibility-visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
 
         &::before {
-            content: '';
             @include width-height(15px, 15px);
             @include elementBorderValueBottom(1px solid $color-b3a36f);
             @include elementBorderValueRight(1px solid $color-b3a36f);
+            content: '';
             background-color: $color-f4f2ee;
             position: absolute;
             top: -8px;   
@@ -89,10 +97,7 @@
         @include flexLeft;
         position: relative;
 
-
-        &:not(:last-child) {
-            @include elementBorderValueBottom(1px solid $color-e6e6e6);
-        }
+        &:not(:last-child) {@include elementBorderValueBottom(1px solid $color-e6e6e6);}
     }
 
     &__inner-link {

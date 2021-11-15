@@ -17,3 +17,12 @@ searchBarInputMobile.addEventListener('click', function(){
 });
 
 // Search bar on click active auto complete//
+
+// User registration options=================
+
+let userRegistrationOptions = document.querySelector('.options__btn-user-reg');
+let userRegistrationOptionsList = document.querySelector('.options__inner-list');
+
+userRegistrationOptions.addEventListener('click', function(){
+    userRegistrationOptionsList.classList.toggle('options__inner-list--active');
+})
