@@ -7,7 +7,16 @@
     // HEADER=====================================//
     // Main page queries============================
     // MEIN >* SECTIONS=============================
-
+    // category
+    .category__row {
+        flex-direction: column;
+    }
+    .category__elements{
+        width: 100%;
+    }
+    .category-mb-tel{
+        margin-bottom: 20px;
+    }
     // MEIN >* SECTIONS===========================//
 
 
