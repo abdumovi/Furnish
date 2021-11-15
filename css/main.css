@@ -1218,14 +1218,14 @@ ol {
 }
 
 .options__inner-list::before {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-bottom: 1px solid #b3a36f;
   border-right: 1px solid #b3a36f;
   content: '';
   background-color: #f4f2ee;
   position: absolute;
-  top: -8px;
+  top: -6px;
   left: 50%;
   z-index: -1;
   -webkit-transform: translateX(-50%) rotate(-135deg);

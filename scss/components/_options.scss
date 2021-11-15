@@ -79,13 +79,13 @@
 
 
         &::before {
-            @include width-height(15px, 15px);
+            @include width-height(10px, 10px);
             @include elementBorderValueBottom(1px solid $color-b3a36f);
             @include elementBorderValueRight(1px solid $color-b3a36f);
             content: '';
             background-color: $color-f4f2ee;
             position: absolute;
-            top: -8px;   
+            top: -6px;   
             left: 50%;
             z-index: -1;
             transform: translateX(-50%) rotate(-135deg);
