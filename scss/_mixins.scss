@@ -33,6 +33,12 @@
   align-items: center;
 }
 
+@mixin flexLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin flex-row {
   display: flex;
   align-items: center;
@@ -102,3 +108,21 @@
   line-height: 1.2;
   margin-bottom: 20px;  
 }
+
+
+@mixin resetA {
+  text-decoration: none;
+  display: inline-block;
+}
+
+@mixin visibility-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@mixin visibility-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+

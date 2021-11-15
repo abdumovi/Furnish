@@ -1,0 +1,57 @@
+.auto-complete {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 100;
+    background-color: $color-white-fff;
+    @include elementBorderValues(1px solid $color-e6e6e6);
+    @include width-height(100%, auto);
+    overflow-y: scroll;
+    @include padding(10px);
+    box-shadow: 0px 7px 10px 0px rgba(34, 60, 80, 0.1);
+    @include visibility-hidden;
+
+
+    &--active {
+        @include visibility-visible;
+    }
+    
+    
+    &__analytics {
+        @include padding(0.5em 1em);
+    
+        &-icon {
+            @include margin-right(12px);
+            color: $color-888;
+        }
+
+        &  span {
+            @include FontsGeneralVariables(16px, 700, 1.1);
+            color: $color-222;
+        }
+    }
+
+    &__item {
+        &:hover {
+            background-color: rgba(136, 136, 136, 0.1);
+        }
+    }
+
+    &__link {
+        @include resetA;
+        @include FontsGeneralVariables(16px, 400, 1.1);
+        color: $color-222;
+        @include padding(.125em .5em);
+        line-height: 32px;
+        width: 100%;
+        text-transform: capitalize;
+
+        &-text-desc {
+            color: $color-888;
+            @include margin-left(8px);
+            font-size: 14px;
+        }
+
+    }
+
+}

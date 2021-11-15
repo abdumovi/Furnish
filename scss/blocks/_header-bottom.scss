@@ -1,0 +1,5 @@
+.header__bottom {
+    @include margin-top(10px);
+    @include elementBorderValueBottom(1px solid $color-e6e6e6);
+    background-color: $color-b3a36f;
+}

@@ -1,0 +1,32 @@
+.search-bar {
+    height: 38px;
+    position: relative;
+
+    &-wrapper {
+        position: relative;
+
+        &__mobile {
+            display: none;
+            @include margin-top(10px);
+        }
+    }
+
+    &__input {
+        @include width-height(100%, 100%);
+        @include elementBorderValues(1px solid $color-eee);
+        @include borderRadius(3px);
+        @include padding(.15em 10px .15em 3em);
+        @include FontsGeneralVariables(16px, 400, 28px);
+        background-color: transparent;
+        color: $color-333;
+        outline: none;
+    }
+
+    &__icon {
+        font-size: 14px;
+        font-weight: 400 !important;
+        position: absolute;
+        top: 12px;
+        left: 18px;
+    }
+}

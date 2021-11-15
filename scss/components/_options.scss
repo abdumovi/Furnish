@@ -1,0 +1,144 @@
+.options {
+    @include flex-row;
+    justify-content: flex-end;
+
+    &__item {
+        @include margin(0 10px);
+        @include flex-row;
+        position: relative;
+    }
+    
+    &__link {
+        @include FontsGeneralVariables(16px, 600, 1.1);
+        color: $color-white-fff;
+        text-transform: capitalize;
+        @include resetA;
+        @include flex-row;
+        background-color: $color-b3a36f;
+        box-shadow: 0 1px 3px #cbcbcb;
+        @include padding(13px 20px);
+        @include elementBorderValues(1px solid $color-b3a36f);
+        @include borderRadius(3px);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: $color-333;
+        }
+    }
+
+    &__btn {
+        @include ButtonReset;
+        @include width-height(50px, 50px);
+        @include borderRadius(50%);
+        box-shadow: 0 1px 3px #cbcbcb;
+        @include flex;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover {
+            box-shadow: 0 1px 3px $color-b3a36f;
+        }
+
+        &-heart {
+            background-image: url('../../media/img/header-icon/heart__icon.svg');
+            background-size: 25px, 25px;
+        }
+
+        &-user-reg {
+            background-size: 35px, 35px;
+            background-image: url('../../media/img/header-icon/user-sign-in.svg');
+        }
+    }
+
+    &__icon {
+        @include padding-right(8px);
+        font-size: 24px;
+        font-weight: 700 !important;
+    }
+
+    &__inner-list {
+        @include borderRadius(4px);
+        @include elementBorderValues(1px solid $color-b3a36f);
+        position: absolute;
+        left: 50%;
+        top: 65px;
+        z-index: 10000;
+        transform: translateX(-50%) translateY(-5px);
+        background-color: $color-f4f2ee;
+        min-width: 180px;
+        @include visibility-hidden;
+        transition: all 0.3s ease;
+
+        &--active {
+            @include visibility-visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+
+        &::before {
+            @include width-height(10px, 10px);
+            @include elementBorderValueBottom(1px solid $color-b3a36f);
+            @include elementBorderValueRight(1px solid $color-b3a36f);
+            content: '';
+            background-color: $color-f4f2ee;
+            position: absolute;
+            top: -6px;   
+            left: 50%;
+            z-index: -1;
+            transform: translateX(-50%) rotate(-135deg);
+        }
+    }
+
+    &__inner-item {
+        height: 40px;
+        @include flexLeft;
+        position: relative;
+
+        &:not(:last-child) {@include elementBorderValueBottom(1px solid $color-e6e6e6);}
+    }
+
+    &__inner-link {
+        width: 100%;
+        @include resetA;
+        color: $color-b3a36f;
+        @include padding(0px 5px 0px 40px);
+        @include FontsGeneralVariables(13px, 500, 40px);
+        text-transform: capitalize;
+        transition: all 0.2s ease;
+        @include borderRadius(4px);
+
+
+
+        &:hover {
+            background-color: rgba($color: #b3a36f, $alpha: 0.3);
+            color: $color-b3a36f;
+        }
+
+        &:hover::before {
+            color: $color-b3a36f;
+        }
+
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            position: absolute;
+            top: 0;
+            left: 10px;
+            color: $color-b3a36f;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        &-user-icon::before {content: '\f406';}
+        &-cog-icon::before {content: '\f013';}
+        &-portfolio::before {content: '\f0b1';}
+        &-catalog::before {content: '\f302';}
+        &-exit::before {content: '\f35a';}
+    }   
+
+
+
+
+
+
+}

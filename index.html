@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project-name</title>
+  <title>Furnish</title>
   <!-- Css-links==========================-->
   <link rel="stylesheet" href="css/main.css">
   <!-- Css-links==========================-->
@@ -12,15 +12,97 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <!-- Icons link=========================-->
 </head>
-<body>
+<body class="body">
   <!-- Header=============================-->
+  <div class="site-bg"></div>
   <header class="header">
     <div class="header__top">
       <div class="header__top-container container">
-        <div class="header__top-logo logo">
-          <a class="logo__link" href="index.html"><h1 class="logo__title visually-hidden">Furnish</h1>Furnish</a>
+        <div class="header__top-inner">
+          <div class="header__top-logo logo col-lg-2 col-md-2">
+            <a class="logo__link" href="index.html"><h1 class="logo__title visually-hidden">Furnish</h1><img class="logo__img" src="media/img/logo/logo.png" alt="Logo"></a>
+          </div>
+          <div class="header__top-search-bar-wrapper search-bar-wrapper__desktop search-bar-wrapper col-lg-6 col-md-6">
+            <div class="header__top-search-bar search-bar" id="search-bar">
+              <input class="search-bar__input" type="text" id="search-text" placeholder="Fotolar, Jixozlar va Profillarni izlang...">
+              <i class="search-bar__icon fal fa-search"></i>
+            </div>
+            <ul class="search-bar__autocomplete auto-complete" id="auto-complete">
+              <li class="auto-complete__analytics"><i class="auto-complete__analytics-icon fas fa-analytics"></i><span>Trending Searches</span></li> 
+              <li class="auto-complete__item"><a class="auto-complete__link" href="https://google.com"><span class="auto-complete__link-text"><span>Kitchen Ideas & Designs in</span><span class="auto-complete__link-text-desc">photos</span></a></li>
+              <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Bathroom Ideas in</span><span class="auto-complete__link-text-desc">photos</span></a></li>
+              <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Living Room Ideas in</span><span class="auto-complete__link-text-desc">photos</span></a></li>
+              <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Architects and Building Designers Near Me in </span><span class="auto-complete__link-text-desc">Find a Pro</span></a></li>
+              <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>General Contractors Near Me in</span><span class="auto-complete__link-text-desc">Find a Pro</span></a></li>
+              <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Interior Designers & Decorators Near Me in</span><span class="auto-complete__link-text-desc">Find a Pro</span></a></li>
+              <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Bar Stools and Counter Stools</span><span class="auto-complete__link-text-desc">Products</span></a></li>
+            </ul>
+          </div>
+          <ul class="header__top-options options col-lg-3 col-md-3">
+            <li class="options__item"><button class="options__btn options__btn-heart" type="button"></button></li>
+            <li class="options__item"><button class="options__btn options__btn-user-reg" type="button"></button>
+              <ul class="options__inner-list">
+                <li class="options__inner-item"><a class="options__inner-link options__inner-link-user-icon" href="#">mening sahifam</a></li>
+                <li class="options__inner-item"><a class="options__inner-link options__inner-link-cog-icon" href="#">sozlamalar</a></li>
+                <li class="options__inner-item">
+                  <a class="options__inner-link options__inner-link-portfolio" href="#">portfolio</a>
+                  <!-- <a class="options__inner-link options__inner-link-catalog" href="#">katalog</a> -->
+                </li>
+                <li class="options__inner-item"><a class="options__inner-link options__inner-link-exit" href="#">chiqish</a></li>
+              </ul>
+            
+            </li>
+            <li class="options__item"><a class="options__link" href="https://web.telegram.org/" target="_blank">reklama</a></li>
+            <!-- <li class="options__item"><button class="options__link options__btn-user" type="button">Kirish</button></li> -->
+          </ul>
         </div>
-        
+        <div class="header__top-search-bar-wrapper search-bar-wrapper search-bar-wrapper__mobile col-md-12">
+          <div class="header__top-search-bar search-bar" id="search-bar">
+            <input class="search-bar__input search-text" type="text" id="search-text-mobile" placeholder="Fotolar, Jixozlar va Profillarni izlang...">
+            <i class="search-bar__icon fal fa-search"></i>
+          </div>
+          <ul class="search-bar__autocomplete auto-complete" id="auto-complete-mobile">
+            <li class="auto-complete__analytics"><i class="auto-complete__analytics-icon fas fa-analytics"></i><span>Trending Searches</span></li> 
+            <li class="auto-complete__item"><a class="auto-complete__link" href="https://google.com"><span class="auto-complete__link-text"><span>Kitchen Ideas & Designs in</span><span class="auto-complete__link-text-desc">photos</span></a></li>
+            <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Bathroom Ideas in</span><span class="auto-complete__link-text-desc">photos</span></a></li>
+            <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Living Room Ideas in</span><span class="auto-complete__link-text-desc">photos</span></a></li>
+            <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Architects and Building Designers Near Me in </span><span class="auto-complete__link-text-desc">Find a Pro</span></a></li>
+            <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>General Contractors Near Me in</span><span class="auto-complete__link-text-desc">Find a Pro</span></a></li>
+            <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Interior Designers & Decorators Near Me in</span><span class="auto-complete__link-text-desc">Find a Pro</span></a></li>
+            <li class="auto-complete__item"><a class="auto-complete__link" href="#"><span class="auto-complete__link-text"><span>Bar Stools and Counter Stools</span><span class="auto-complete__link-text-desc">Products</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__bottom-container container">
+        <nav class="header__bottom-nav navigation">
+          <ul class="header__bottom-list navigation__list col-lg-12">
+            <li class="navigation__item col-lg-3"><a class="navigation__link" href="#">jihozlar</a>
+              <!-- <div class="navigation__inner-list-block">
+                <b class="navigation__inner-list-block-name">kitchen & dining</b>
+                <ul class="navigation__inner-list">
+                  <li class="navigation__inner-item"><a class="navigation__inner-link" href="#">kitchen</a></li>
+                  <li class="navigation__inner-item"><a class="navigation__inner-link" href="#">dinning room</a></li>
+                  <li class="navigation__inner-item"><a class="navigation__inner-link" href="#">panty</a></li>
+                  <li class="navigation__inner-item"><a class="navigation__inner-link" href="#">great room</a></li>
+                  <li class="navigation__inner-item"><a class="navigation__inner-link" href="#">breakfast nook</a></li>
+                </ul>
+              </div> -->
+            </li>
+            <li class="navigation__item col-lg-3"><a class="navigation__link" href="#">g'oyalar</a>
+              <ul class="navigation__inner-list">
+
+              </ul>
+            </li>
+            <li class="navigation__item col-lg-3"><a class="navigation__link" href="#">mutahassislar</a>
+              <ul class="navigation__inner-list">
+
+              </ul>
+            </li>
+            <li class="navigation__item col-lg-3"><a class="navigation__link" href="#">foydali(blog)</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -207,6 +289,7 @@
         </div>
       </div>
     </section>
+ main
   </main>
   <!-- Main=============================//-->
   <!-- Footer=============================-->
