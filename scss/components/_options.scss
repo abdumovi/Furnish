@@ -7,8 +7,6 @@
         @include flex-row;
         position: relative;
     }
-
-
     
     &__link {
         @include FontsGeneralVariables(16px, 600, 1.1);
@@ -65,7 +63,7 @@
         position: absolute;
         left: 50%;
         top: 65px;
-        z-index: 10;
+        z-index: 10000;
         transform: translateX(-50%) translateY(-5px);
         background-color: $color-f4f2ee;
         min-width: 180px;
@@ -108,15 +106,17 @@
         @include FontsGeneralVariables(13px, 500, 40px);
         text-transform: capitalize;
         transition: all 0.2s ease;
+        @include borderRadius(4px);
+
 
 
         &:hover {
-            background-color: $color-b3a36f;
-            color: $color-eee;
+            background-color: rgba($color: #b3a36f, $alpha: 0.3);
+            color: $color-b3a36f;
         }
 
         &:hover::before {
-            color: $color-eee;
+            color: $color-b3a36f;
         }
 
         &::before {

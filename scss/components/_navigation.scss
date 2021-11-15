@@ -1,0 +1,52 @@
+.navigation {
+
+    &__list {
+        @include flex;
+    }
+
+    &__item {
+        text-align: center;
+
+        position: relative;
+        z-index: 20;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $color-eee;
+        }
+
+        &::before {
+            content: '';
+            @include width-height(100%, 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        &:hover::before {
+            @include elementBorderValueTop(3px solid rgba($color: #b3a36f, $alpha: 0.5));
+            @include elementBorderValueRight(3px solid rgba($color: #b3a36f, $alpha: 0.5));
+            @include elementBorderValueLeft(3px solid rgba($color: #b3a36f, $alpha: 0.5));
+
+        }
+    }
+
+    &__link {
+        @include resetA;
+        @include padding(5px 0);
+        @include width-height(100%, 50px);
+        text-transform: uppercase;
+        @include FontsGeneralVariables(16px, 600, 38px);
+        letter-spacing: 1px;
+        color: $color-eee;
+        position: relative;
+        z-index: 100;
+    }
+
+    &__item:hover &__link {
+        color: $color-b3a36f;
+    }
+
+
+}
