@@ -1114,6 +1114,7 @@ ol {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
 }
 
 .options__link {
@@ -1190,6 +1191,105 @@ ol {
   padding-right: 8px;
   font-size: 24px;
   font-weight: 700 !important;
+}
+
+.options__inner-list {
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  z-index: 10;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #f4f2ee;
+  border-radius: 4px;
+  border: 1px solid #b3a36f;
+  min-width: 180px;
+}
+
+.options__inner-list::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-bottom: 1px solid #b3a36f;
+  border-right: 1px solid #b3a36f;
+  background-color: #f4f2ee;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translateX(-50%) rotate(-135deg);
+          transform: translateX(-50%) rotate(-135deg);
+}
+
+.options__inner-item {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.options__inner-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.options__inner-link {
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  color: #b3a36f;
+  padding: 0px 5px 0px 40px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.options__inner-link:hover {
+  background-color: #b3a36f;
+  color: #eee;
+}
+
+.options__inner-link:hover::before {
+  color: #eee;
+}
+
+.options__inner-link::before {
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #b3a36f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.options__inner-link-user-icon::before {
+  content: '\f406';
+}
+
+.options__inner-link-cog-icon::before {
+  content: '\f013';
+}
+
+.options__inner-link-portfolio::before {
+  content: '\f0b1';
+}
+
+.options__inner-link-catalog::before {
+  content: '\f302';
+}
+
+.options__inner-link-exit::before {
+  content: '\f35a';
 }
 
 .search-bar {

@@ -5,6 +5,7 @@
     &__item {
         @include margin(0 10px);
         @include flex-row;
+        position: relative;
     }
 
 
@@ -26,7 +27,6 @@
             background-color: transparent;
             color: $color-333;
         }
-
     }
 
     &__btn {
@@ -41,11 +41,6 @@
         &:hover {
             box-shadow: 0 1px 3px $color-b3a36f;
         }
-
-        // &-user {
-        // background-size: 25px, 25px;
-        //     background-image: url('../../media/img/header-icon/user-sign-up.svg');
-        // }
 
         &-heart {
             background-image: url('../../media/img/header-icon/heart__icon.svg');
@@ -63,6 +58,82 @@
         font-size: 24px;
         font-weight: 700 !important;
     }
+
+    &__inner-list {
+        position: absolute;
+        left: 50%;
+        top: 65px;
+        z-index: 10;
+        transform: translateX(-50%);
+        background-color: $color-f4f2ee;
+        @include borderRadius(4px);
+        @include elementBorderValues(1px solid $color-b3a36f);
+        min-width: 180px;
+
+        &::before {
+            content: '';
+            @include width-height(15px, 15px);
+            @include elementBorderValueBottom(1px solid $color-b3a36f);
+            @include elementBorderValueRight(1px solid $color-b3a36f);
+            background-color: $color-f4f2ee;
+            position: absolute;
+            top: -8px;   
+            left: 50%;
+            z-index: -1;
+            transform: translateX(-50%) rotate(-135deg);
+        }
+    }
+
+    &__inner-item {
+        height: 40px;
+        @include flexLeft;
+        position: relative;
+
+
+        &:not(:last-child) {
+            @include elementBorderValueBottom(1px solid $color-e6e6e6);
+        }
+    }
+
+    &__inner-link {
+        width: 100%;
+        @include resetA;
+        color: $color-b3a36f;
+        @include padding(0px 5px 0px 40px);
+        @include FontsGeneralVariables(13px, 500, 40px);
+        text-transform: capitalize;
+        transition: all 0.2s ease;
+
+
+        &:hover {
+            background-color: $color-b3a36f;
+            color: $color-eee;
+        }
+
+        &:hover::before {
+            color: $color-eee;
+        }
+
+        &::before {
+            font-family: "Font Awesome 5 Pro";
+            position: absolute;
+            top: 0;
+            left: 10px;
+            color: $color-b3a36f;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        &-user-icon::before {content: '\f406';}
+        &-cog-icon::before {content: '\f013';}
+        &-portfolio::before {content: '\f0b1';}
+        &-catalog::before {content: '\f302';}
+        &-exit::before {content: '\f35a';}
+    }   
+
+
+
+
 
 
 }
